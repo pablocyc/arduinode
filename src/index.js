@@ -4,6 +4,6 @@ const circuito = new jf.Board()
 circuito.on('ready', prender)
 
 function prender () {
-  let led = new jf.Led(13)
-  led.blink(300) 
+  let rgb = new jf.Led.RGB([10, 11, 9])
+  rgb.color('#ff00ff') 
 }
